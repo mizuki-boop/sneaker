@@ -1,0 +1,477 @@
+/* 共通タイトル */
+h2 {
+    text-align: center;
+}
+
+/* PC */
+
+@media screen and (min-width: 481px) { 
+
+
+/* header */
+
+#top-img {
+    width: 100%;
+}
+header > div > a {
+    font-size: 42px;
+    text-decoration: none;
+    color: black;
+}
+
+ a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+header > div > img {
+    height: 42px;
+    margin: auto 0;
+}
+#top {
+    display: flex;
+    justify-content: space-between;
+}
+#close {
+    height: 42px;
+}
+
+/* ハンバーガーメニュー */
+
+
+#nav {
+    background-color: black;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 300px;
+    display: none;
+    z-index: 100;
+    padding: 60px 0;
+  }
+ 
+  #nav > a:link {
+    color: #ffffff;
+  }
+  #nav > a:visited {
+    color: #ffffff;
+  }
+  #nav > a:hover {
+    color: #ffffff;
+  }
+  #nav > a:active {
+    color: #ffffff;
+  }
+
+  #nav > .menu {
+    text-decoration: none;
+    display: block;
+    margin: 0 20px 0 20px;
+    height: 44px;
+    font-size: 16px;
+    border-bottom: 1px solid #ffffff;
+    padding-top: 10px;
+  }
+  #pickup-title {
+    border-top: 1px solid #ffffff;
+  }
+
+  #sns {
+    padding: 60px 0;
+  }
+
+  #sns > a {
+    text-decoration: none;
+    display: block;
+    margin: 0 20px 0 20px;
+    height: 44px;
+    font-size: 16px;
+  }
+
+  #sns > a:link {
+    color: #ffffff;
+  }
+  #sns > a:visited {
+    color: #ffffff;
+  }
+  #sns > a:hover {
+    color: #ffffff;
+  }
+  #sns > a:active {
+    color: #ffffff;
+  }
+  
+/* ハンバーガーボタン詳細 */
+
+.openbtn7{
+    position: relative;/*ボタン内側の基点となるためrelativeを指定*/
+    cursor: pointer;
+    width: 50px;
+    height:50px;
+    border-radius: 5px;
+  }
+  
+  /*ボタン内側*/
+  
+  .openbtn7 .openbtn-area{
+    transition: all .4s;
+  }
+  
+  .openbtn7 span{
+    display: inline-block;
+    transition: all .4s;/*アニメーションの設定*/
+    position: absolute;
+    left: 14px;
+    height: 3px;
+    border-radius: 2px;
+    background: black;
+    width: 45%;
+    }
+  
+  
+  .openbtn7 span:nth-of-type(1) {
+    top:15px; 
+  }
+  
+  .openbtn7 span:nth-of-type(2) {
+    top:23px;
+  }
+  
+  .openbtn7 span:nth-of-type(3) {
+    top:31px;
+  }
+  
+  /*activeクラスが付与されると
+  線と周りのエリアが回転して×になる*/
+  
+  .openbtn7.active .openbtn-area{
+    transform: rotateY(-360deg);
+  }
+  
+  .openbtn7.active span:nth-of-type(1) {
+      top: 18px;
+      left: 18px;
+      transform: translateY(6px) rotate(-135deg);
+      width: 30%;
+  }
+  
+  .openbtn7.active span:nth-of-type(2) {
+    opacity: 0;
+  }
+  
+  .openbtn7.active span:nth-of-type(3){
+    top: 30px;
+    left: 18px;
+    transform: translateY(-6px) rotate(135deg);
+    width: 30%;
+}
+
+
+
+/* PICKUP */
+.carouselImg {
+    width: 80%;
+    margin: 0 auto;
+}
+/* FEATURE */
+#feature-box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#feature-box > div {
+    width: 30%;
+    margin: 20px auto;
+    padding: 0 auto;
+    border: 1px solid gray;
+    box-shadow: 2px 2px 2px gray;
+}
+#feature-box > div > img {
+    width: 100%;
+}
+
+ #feature-box > div > h3,
+#feature-box > div > p, #feature-box > div > h4 {
+    width: 90%;
+    margin: 10px auto;
+    padding: 5px auto;
+}
+#feature-box > div > h4 {
+ text-align: right;   
+}
+
+/* CONTACT */
+#contact-box {
+    display: flex;
+    margin: 50px 100px 100px 100px;
+}
+
+#contact-box > div {
+    width: 50%;
+    padding: 0 50px;
+    height: auto;
+}
+.send {  
+    text-align: center;      
+    padding: 10px 60px;   
+    border: 1px solid white;   
+    margin-top: 20px;
+    color: white;
+    background-color: black;
+  }
+#name, #mail, #message {
+    width: 100%;
+}
+
+#message {
+    padding-top: 30px;
+}
+
+#copy {
+    text-align: center;
+}
+#contact {
+    background-color: black;
+    color: white;
+    padding-top: 10px;
+}
+
+}
+
+
+/* スマホ */
+
+@media screen and (max-width: 767px) {
+/* header */
+
+#top-img {
+  width: 100%;
+}
+header > div > a {
+  font-size: 42px;
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+header > div > img {
+  height: 42px;
+  margin: auto 0;
+}
+#top {
+  display: flex;
+  justify-content: space-between;
+}
+#close {
+  height: 42px;
+}
+
+/* ハンバーガーメニュー */
+
+
+#nav {
+  background-color: black;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 320px;
+  display: none;
+  z-index: 100;
+  padding: 60px 0;
+}
+
+#nav > a:link {
+  color: #ffffff;
+}
+#nav > a:visited {
+  color: #ffffff;
+}
+#nav > a:hover {
+  color: #ffffff;
+}
+#nav > a:active {
+  color: #ffffff;
+}
+
+#nav > .menu {
+  text-decoration: none;
+  display: block;
+  margin: 0 20px 0 20px;
+  height: 44px;
+  font-size: 16px;
+  border-bottom: 1px solid #ffffff;
+  padding-top: 10px;
+}
+#pickup-title {
+  border-top: 1px solid #ffffff;
+}
+
+#sns {
+  padding: 60px 0;
+}
+
+#sns > a {
+  text-decoration: none;
+  display: block;
+  margin: 0 20px 0 20px;
+  height: 44px;
+  font-size: 16px;
+}
+
+#sns > a:link {
+  color: #ffffff;
+}
+#sns > a:visited {
+  color: #ffffff;
+}
+#sns > a:hover {
+  color: #ffffff;
+}
+#sns > a:active {
+  color: #ffffff;
+}
+
+/* ハンバーガーボタン詳細 */
+
+.openbtn7{
+  position: relative;/*ボタン内側の基点となるためrelativeを指定*/
+  cursor: pointer;
+  width: 50px;
+  height:50px;
+  border-radius: 5px;
+}
+
+/*ボタン内側*/
+
+.openbtn7 .openbtn-area{
+  transition: all .4s;
+}
+
+.openbtn7 span{
+  display: inline-block;
+  transition: all .4s;/*アニメーションの設定*/
+  position: absolute;
+  left: 14px;
+  height: 3px;
+  border-radius: 2px;
+  background: black;
+  width: 45%;
+  }
+
+
+.openbtn7 span:nth-of-type(1) {
+  top:15px; 
+}
+
+.openbtn7 span:nth-of-type(2) {
+  top:23px;
+}
+
+.openbtn7 span:nth-of-type(3) {
+  top:31px;
+}
+
+/*activeクラスが付与されると
+線と周りのエリアが回転して×になる*/
+
+.openbtn7.active .openbtn-area{
+  transform: rotateY(-360deg);
+}
+
+.openbtn7.active span:nth-of-type(1) {
+    top: 18px;
+    left: 18px;
+    transform: translateY(6px) rotate(-135deg);
+    width: 30%;
+}
+
+.openbtn7.active span:nth-of-type(2) {
+  opacity: 0;
+}
+
+.openbtn7.active span:nth-of-type(3){
+  top: 30px;
+  left: 18px;
+  transform: translateY(-6px) rotate(135deg);
+  width: 30%;
+}
+
+
+
+/* PICKUP */
+.carouselImg {
+  width: 80%;
+  margin: 0 auto;
+}
+.carousel > div > .carouselImg {
+  width: 80%;
+}
+
+/* FEATURE */
+#feature-box {
+  display: block;
+}
+
+#feature-box > div {
+  width: 100%;
+  margin: 20px auto;
+  padding: 0 auto;
+  border: 1px solid gray;
+  box-shadow: 2px 2px 2px gray;
+}
+#feature-box > div > img {
+  width: 100%;
+}
+
+#feature-box > div > h3,
+#feature-box > div > p, #feature-box > div > h4 {
+  width: 90%;
+  margin: 10px auto;
+  padding: 5px auto;
+}
+#feature-box > div > h4 {
+text-align: right;   
+}
+
+/* CONTACT */
+#contact-box {
+  display:block;
+}
+
+#contact-box > div {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+}
+.send {
+  padding: 10px 60px;   
+  border: 1px solid white;   
+  color: white;
+  background-color: black;
+  margin-top: 20px;
+  width: 100%;
+}
+
+#name, #mail, #message {
+  width: 100%;
+}
+#message {
+  padding-top: 30px;
+}
+
+#copy {
+  text-align: center;
+  margin-top: 60px;
+}
+#contact {
+  background-color: black;
+  color: white;
+  padding-top: 10px;
+}
+}
